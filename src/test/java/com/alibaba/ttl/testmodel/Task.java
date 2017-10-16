@@ -22,10 +22,6 @@ public class Task implements Runnable {
 
     @Override
     public void run() {
-        try {
-            copied = Utils.modifyTtlInstances(tag, ttlInstances);
-        } catch (Throwable e) {
-            e.printStackTrace();
-        }
+        copied = Utils.modifyTtlInstances(tag, ttlInstances);
     }
 }
